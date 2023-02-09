@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="15dp"
+        android:layout_width="377dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:hint="id buku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:ems="10"/>
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:id="@+id/etKategori"
+        android:layout_width="377dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Kategori"
+        app:layout_constraintEnd_toEndOf="@+id/etId"
+        app:layout_constraintStart_toStartOf="@+id/etId"
+        app:layout_constraintTop_toBottomOf="@+id/etId" />
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:id="@+id/etJudul"
+        android:layout_width="377dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Judul"
+        app:layout_constraintEnd_toEndOf="@+id/etKategori"
+        app:layout_constraintStart_toStartOf="@+id/etKategori"
+        app:layout_constraintTop_toBottomOf="@+id/etKategori" />
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:id="@+id/etPengarang"
+        android:layout_width="377dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Pengarang"
+        app:layout_constraintEnd_toEndOf="@+id/etJudul"
+        app:layout_constraintStart_toStartOf="@+id/etJudul"
+        app:layout_constraintTop_toBottomOf="@+id/etJudul" />
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:id="@+id/etPenerbit"
+        android:layout_width="377dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:hint="Penerbit"
+        app:layout_constraintEnd_toEndOf="@+id/etPengarang"
+        app:layout_constraintStart_toStartOf="@+id/etPengarang"
+        app:layout_constraintTop_toBottomOf="@+id/etPengarang" />
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:id="@+id/etJumlah"
+        android:layout_width="377dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Jumlah Buku"
+        app:layout_constraintEnd_toEndOf="@+id/etPenerbit"
+        app:layout_constraintStart_toStartOf="@+id/etPenerbit"
+        app:layout_constraintTop_toBottomOf="@+id/etPenerbit" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/bg"
+        android:id="@+id/btnSimpan"
+        android:layout_width="182dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="44dp"
+        android:text="SIMPAN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etJumlah" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/bg"
+        android:id="@+id/btnUpdate"
+        android:layout_width="182dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:text="UPDATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimpan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
